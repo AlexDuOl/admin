@@ -1,5 +1,4 @@
 import BaseModel from "./BaseModel";
-
 class RutasCliente extends BaseModel {
     constructor(data) {
         super(data);

@@ -8,7 +8,8 @@ export default class BaseModel {
     this.relations = data.relations;
 
     this.id = data.id
-    console.log(data);
+    this.cliente = data.cliente
+    console.log(this.cliente);
   }
 
   getAttribute (name) {

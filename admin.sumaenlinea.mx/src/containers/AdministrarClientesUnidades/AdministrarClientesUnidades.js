@@ -4,10 +4,8 @@ import { requestClientesUnidades } from '../../creators/clientes_unidades'
 import AdministrarClientesUnidades from "../../components/AdministrarClientesUnidades/AdministrarClientesUnidades";
 
 const mapStateToProps = (state) => {
-    const {
-        clientesUnidades,
-    } = state;
-    console.log(state);
+    const { clientesUnidades } = state;
+   console.log(state);
     return {
         clientesUnidades,
     }

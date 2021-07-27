@@ -1,4 +1,4 @@
-import ClienteUnidades from '../modelos/ClienteUnidades';
+import ClientesUnidades from '../modelos/ClientesUnidades'
 
 import {
     REQUEST_CLIENTES_UNIDADES,
@@ -23,11 +23,10 @@ export default (state = initialState, action) => {
                 error: null
             };
         case REQUEST_CLIENTES_UNIDADES_SUCCESS:
-            console.log(action.payload.data);
             return {
                 ...state,
                 fetching: false,
-                all: action.payload.data.map(d => new ClienteUnidades(d.data)),
+                all: action.payload.data.map(d => new ClientesUnidades(d.data)),
                 received_date: Date.now()
             };
         case REQUEST_CLIENTES_UNIDADES_FAILED:

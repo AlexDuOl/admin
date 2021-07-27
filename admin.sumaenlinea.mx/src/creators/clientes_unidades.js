@@ -14,7 +14,7 @@ export const requestClientesUnidades = (params) => {
 export const onClientesUnidadesRequestSuccess = (response) => {
     return {
         type: REQUEST_CLIENTES_UNIDADES_SUCCESS,
-        payload: response
+        payload: response,
     }
 }
 
