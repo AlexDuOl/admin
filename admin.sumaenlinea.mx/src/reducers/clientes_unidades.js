@@ -32,7 +32,7 @@ export default (state = initialState, action) => {
         case REQUEST_CLIENTES_UNIDADES_FAILED:
             return {
                 ...initialState,
-                fetching: false,
+                //fetching: false,
                 error: {
                     cause: action.payload
                 }

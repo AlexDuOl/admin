@@ -5,7 +5,7 @@ import AdministrarClientesUnidades from "../../components/AdministrarClientesUni
 
 const mapStateToProps = (state) => {
     const { clientesUnidades } = state;
-   console.log(state);
+    console.log(state);
     return {
         clientesUnidades,
     }

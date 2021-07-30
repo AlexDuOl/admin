@@ -13,7 +13,7 @@ function* fetchClientesUnidades({payload: {params}}) {
     try {
         const url = `${ENDPOINT_CLIENTES_UNIDADES}` + (params.length ? `?${params.join('&')}` : '')
 
-        const response = yield call(axios.post, url)
+        const response = yield call(axios.get, url)
         yield put(onClientesUnidadesRequestSuccess(response))
     } catch (e) {
         yield put(onClientesUnidadesRequestFailed(e.response))

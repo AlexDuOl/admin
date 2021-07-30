@@ -2,6 +2,12 @@ import BaseModel from './BaseModel'
 import RutasCliente from './RutasCliente'
 
 class ClientesUnidades extends BaseModel {
+    constructor(data) {
+        super(data)
+console.log(data);
+        this.id = data.id
+        this.cliente = data.cliente
+    }
 
     /** @returns {RutasCliente} */
     getRutasCliente(){

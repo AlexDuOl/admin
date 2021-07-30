@@ -8,7 +8,7 @@ import operadores from "../reducers/operadores"
 import tickets from "../reducers/tickets"
 import equiposCelulares from "../reducers/equipos_celulares"
 import colaboradores from "../reducers/colaboradores";
-import clientes_unidades from '../reducers/clientes_unidades'
+import clientesUnidades from '../reducers/clientes_unidades'
 
 const makeRootReducer = () => {
   return combineReducers({
@@ -21,7 +21,7 @@ const makeRootReducer = () => {
     tickets,
     equiposCelulares,
     colaboradores,
-    clientes_unidades,
+    clientesUnidades,
   })
 }
 

@@ -3,14 +3,11 @@ import {Segment} from 'semantic-ui-react'
 import PropTypes from "prop-types";
 
 class ListadoClientesUnidades extends Component {
-
     render() {
-    
         const {
             clientesUnidades,
         } = this.props;
-        console.log(clientesUnidades);
-
+console.log(clientesUnidades);
         return(
             <Segment>
                 {/*                
